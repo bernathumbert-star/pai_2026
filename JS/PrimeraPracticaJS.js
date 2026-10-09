@@ -372,8 +372,29 @@ c12 = 7; // correcte
 // let radio = Number (prompt("introdueix el radi de la circumferencia:"))
 // calcularCircunferencia(radio)
 
-// 12.4.- Escriu un programa en JavaScript que calculi el sou mensual a partir del nombre d’hores treballades (160 hores) i el preu per hora treballada (12€). Prova amb altres valors. 
+// 12.4.- Escriu un programa en JavaScript que calculi el sou mensual a partir del nombre d’hores treballades (160 hores) i el preu per hora treballada (12€). Prova amb altres valors.
 
+function CalculSou(hores, preu) {
+    let sou = hores * preu
+    console.log(sou)
+}
+
+let hores = Number(prompt ("introdueix les hores treballades:"))
+let preu = Number(prompt ("introdueix el salari per hora treballada:"))
+CalculSou(hores, preu)
+
+
+
+// 12.5.- Fes un programa en JavaScript que, donades dues variables x i y, intercanviï els seus
+// valores de manera que x acabi tenint el valor de y i y acabi tenint el valor de x. Així, si
+// inicialment tenim: let x = "Hola", y = 3; Quan el programa acabi, x haurà de guardar un 3 i y
+// un “Hola”.
+// 12.6.- Fes un programa que escrigui a la consola el cub d’un número llegit per teclat (amb el
+// prompt())
+// 12.7.- Escriu un programa d’una sola línia que faci que aparegui a la pantalla un alert que
+// digui “Hello World”.
+// 12.8.- Escriu un programa de dues línies que demani el nom de l’usuari amb un prompt() i
+// escrigui un text a la consola que digui “Hola nomUsuari”
 
 
 
