@@ -407,8 +407,8 @@ c12 = 7; // correcte
 
 // 12.8.- Escriu un programa de dues línies que demani el nom de l’usuari amb un prompt() i escrigui un text a la consola que digui “Hola nomUsuari”
 
-let x = prompt("introdueix el teu nom:")
-console.log("Hola " + x )
+// let x = prompt("introdueix el teu nom:")
+// console.log("Hola " + x )
 
 
 
