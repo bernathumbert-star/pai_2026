@@ -57,9 +57,9 @@
 // console.log(a); No pots declarar dues vegades la mateixa variable amb let.
 
 //errors java :) https://github.com/denysdovhan/wtfjs#true-is-not-equal--but-not-equal--too
-console.log(true == ![])
-console.log(true == []) 
-console.log([1,2,3] + [4,5,6]) // "1,2,34,5,6"
+// console.log(true == ![])
+// console.log(true == []) 
+// console.log([1,2,3] + [4,5,6]) // "1,2,34,5,6"
 
 
 
@@ -388,6 +388,7 @@ c12 = 7; // correcte
 // let x = prompt("introdueix la primera variable (x):")
 // let y = prompt("introdueix la segona variable(y):")
 
+
 // let variable = x
 // let variable2 = y
 // y = x // el valor de y que es 2 ara es 1 (x)
@@ -409,13 +410,3 @@ c12 = 7; // correcte
 
 // let x = prompt("introdueix el teu nom:")
 // console.log("Hola " + x )
-
-
-
-
-
-
-
-
-
-
