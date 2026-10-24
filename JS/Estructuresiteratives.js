@@ -103,61 +103,313 @@
 
 
 
-// 14.1.- Escriu un programa que, donat un número llegit amb prompt, escrigui el missatge “el
-// número llegit és negatiu” si el número és més petit que zero i escrigui el missatge “el
-// número llegit és positiu” en cas contrari.
-// 14.2.- Escriu un programa que donat un número llegit amb prompt, escrigui el missatge “el
-// número llegit és parell” si el número es parell i “el número llegit es senar” en cas contrari.
-// 14.3.- Escriu un programa que, donat dos números llegits amb prompt, escrigui a la consola
-// quin és el més gran. Només pots fer servir una instrucció if-else.
-// 14.4.- Escriu un programa que, donat tres números llegits amb prompt, escrigui a la consola
-// quin es el més gran. Pista. Comprova si el primer número llegit és el més gran. Si no és així,
-// comprova si el més gran és el segon. Si tampoc ho és, el més gran, sens dubte, serà el
-// tercer.
-// 14.5.- Escriu un programa que, donats tres números llegits amb prompt, escrigui a la
-// consola els tres números ordenats.
-// 14.6.- En un control d’alcoholèmia necessiten un programa que els hi digui si una persona
-// pot conduir o no. El programa demanarà dues dades: Si la persona té carnet de conduir i el
-// valor que ha sortit a la prova d’alcoholèmia. El programa ha de respondre que sí pot conduir
-// si té carnet de conduir i la prova d’alcoholèmia ha donat un valor inferior a 0.25
-// 13.7.- Escriu un programa que, donat dos números llegits amb prompt, escrigui a la consola
-// el resultat de restar al nombre més gran el nombre més petit.
-// 14.8.- Escriu un programa que simuli la compra a una web. L’usuari haurà d’introduir una
-// quantitat (el que cal pagar) per teclat fent servir la instrucció prompt.
-// En cas que la quantitat sigui 30€ o més, es mostrarà a la consola un missatge indicant que
-// el cost total és de 30€ donat que el transport és gratis.
-// En cas que la quantitat sigui inferior a 30€, es mostrarà un missatge dient el preu total que
-// consistirà en l’introduït més 4.95€ en concepte de cost d’enviament.
-// 14.9.- Un usuari va a una gelateria i per calcular el cost del seu gelat té un ordinador on
-// posa dues dades:
-// 1. Si vol un conus (c) o una terrina (t). El conus té un cost base de 3.45 i la terrina de
-// 3.95
+// 14.1.- Escriu un programa que, donat un número llegit amb prompt, escrigui el missatge “el número llegit és negatiu” si el número és més petit que zero i escrigui el missatge “el número llegit és positiu” en cas contrari.
+
+// let num = Number(prompt("Escriu un nombre"))
+
+// if(num < 0){
+//     console.log("el número llegit és negatiu")
+// }
+// else{
+//     console.log("el número llegit és positiu")
+// }
+
+// 14.2.- Escriu un programa que donat un número llegit amb prompt, escrigui el missatge “el número llegit és parell” si el número es parell i “el número llegit es senar” en cas contrari.
+
+// let num = Number(prompt("Escriu un nombre"))
+
+// if(num > 0){
+//     console.log("el número llegit és positiu")
+// }
+// else{
+//     console.log("el número llegit és negatiu")
+// }
+
+
+// 14.3.- Escriu un programa que, donat dos números llegits amb prompt, escrigui a la consola quin és el més gran. Només pots fer servir una instrucció if-else.
+
+// let num = Number(prompt("Escriu un nombre"))
+// let num2 = Number(prompt("Escriu un segon nombre"))
+
+// if (num < num2){
+//     console.log("el segon nombre és major")
+// }
+// else{
+//     console.log("el primer nombre és major")
+// }
+
+
+// 14.4.- Escriu un programa que, donat tres números llegits amb prompt, escrigui a la consola quin es el més gran. Pista. Comprova si el primer número llegit és el més gran. Si no és així, comprova si el més gran és el segon. Si tampoc ho és, el més gran, sens dubte, serà el tercer.
+// let num = Number(prompt("Escriu un nombre"));
+// let num2 = Number(prompt("Escriu un segon nombre"));
+// let num3 = Number(prompt("Escriu un tercer nombre"));
+
+// if (num > num2 && num > num3){
+//         console.log("el primer nombre és major");
+// }
+// else if (num2 > num && num2 > num3){
+//         console.log("el segon nombre és major");
+// }
+// else{
+//     console.log("el tercer nombre és major");
+// }
+
+// 14.5.- Escriu un programa que, donats tres números llegits amb prompt, escrigui a la consola els tres números ordenats.
+
+//AMB ARRAY:
+
+// let numeros = [
+//     Number(prompt("Escriu un nombre")),
+//     Number(prompt("Escriu un nombre")),
+//     Number(prompt("Escriu un nombre"))
+// ];
+
+// numeros.sort(function(a, b) {
+//     return a - b;
+// }); 
+
+// console.log("ordenats de menor a major:" + numeros.join(", "));
+
+
+//AMB IF:
+// let num = Number(prompt("Escriu un nombre"));
+// let num2 = Number(prompt("Escriu un segon nombre"));
+// let num3 = Number(prompt("Escriu un tercer nombre"));
+
+// let petit, mitja, gran;
+
+// if (num >= num2 && num >= num3){
+//     gran = num
+
+//     if(num2 >= num3){
+//         mitja = num2
+//         petit = num3
+// }       
+//         else{
+//             mitja = num3
+//             petit = num2
+// }}
+// else if(num2 >= num && num2 >= num3){
+//     gran = num2
+
+//     if (num >= num3){
+//         mitja = num
+//         petit = num3
+// }}   
+// else{
+//     gran = num3
+    
+//     if (num2 >= num){
+//         mitja = num2
+//         petit = num
+//     }
+//         else{
+//             mitja = num
+//             petit = num2
+//         }
+// }
+
+// console.log("l'ordre de major a menor és:" + gran +", " + mitja + ", " + petit +".")
+
+
+
+// 14.6.- En un control d’alcoholèmia necessiten un programa que els hi digui si una persona pot conduir o no. El programa demanarà dues dades: Si la persona té carnet de conduir i el valor que ha sortit a la prova d’alcoholèmia. El programa ha de respondre que sí pot conduir si té carnet de conduir i la prova d’alcoholèmia ha donat un valor inferior a 0.25
+
+// let carnet = prompt("tens carnet de conduir? (si/no)")
+// let prova = Number(prompt("quin valor has donat en la prova d'alcolhemia?"))
+
+// if (carnet === "si" && prova < 0.25){
+//     console.log("pots conduir") 
+// }
+
+// else{
+//     console.log("no pots conduir")
+// }
+
+
+// 13.7.- Escriu un programa que, donat dos números llegits amb prompt, escrigui a la consola el resultat de restar al nombre més gran el nombre més petit.
+
+// Amb Math.abs
+// let num = Number(prompt("primer nombre"))
+// let num2 = Number(prompt("el segon nombre"))
+
+// console.log("el resultat de la resta del menor menys el major és:" + Math.abs(num - num2))
+
+// Amb if:
+// let num = Number(prompt("primer nombre"))
+// let num2 = Number(prompt("el segon nombre"))
+
+// if(num > num2){
+//     console.log("el resultat de la resta del menor menys el major és:" + (num - num2))
+// }
+// else{
+//     console.log("el resultat de la resta del menor menys el major és:" + (num2 - num))
+// }
+
+
+// 14.8.- Escriu un programa que simuli la compra a una web. L’usuari haurà d’introduir una quantitat (el que cal pagar) per teclat fent servir la instrucció prompt.En cas que la quantitat sigui 30€ o més, es mostrarà a la consola un missatge indicant que el cost total és de 30€ donat que el transport és gratis. En cas que la quantitat sigui inferior a 30€, es mostrarà un missatge dient el preu total que consistirà en l’introduït més 4.95€ en concepte de cost d’enviament.
+
+// let preu = Number(prompt("Introdueix l'import a pagar: "));
+
+// if(preu >= 30){
+//     console.log("el cost és " + preu +"€, el transport és gratuit.")
+// }
+// else{ 
+//     console.log("el cost és "+ (preu + 4.95)+"€, el transport val 4.95€")
+// }
+
+
+// 14.9.- Un usuari va a una gelateria i per calcular el cost del seu gelat té un ordinador on posa dues dades:
+// 1. Si vol un conus (c) o una terrina (t). El conus té un cost base de 3.45 i la terrina de 3.95
 // 2. Quin d’aquests sabors vol:
 // 1. Vainilla o Xocolata. No cal afegir res
 // 2. Turró, Menta o Oreo. Caldrà afegir 0.5 al preu final.
 // 3. Crema, Gerds o Ametlles. Caldrà afegir 1 al preu final.
-// Si l’usuari posa alguna dada malament, el missatge que es posarà a la consola serà “Error
-// dades mal introduïdes”
+// Si l’usuari posa alguna dada malament, el missatge que es posarà a la consola serà “Error, dades mal introduïdes”
 // Si totes les dades són correctes, escriurà el preu final.
-// Condicional múltiple: switch
-// 15.1.- Fent servir la instrucció switch escriu un programa que donat amb prompt un número
-// de mes, entre 1 i 12, escrigui per pantalla el nom del mes que correspon.
-// 15.2.- Un usuari va a una gelateria i per calcular el cost del seu gelat té un ordinador on
-// posa dues dades:
-// 1. Si vol un conus (c) o una terrina (t). El conus té un cost base de 3.45 i la terrina de
-// 3.95
+// let tipus = "c"; // 'c' per conus, 't' per terrina
+// let sabor = "Xocolata"; // Sabor triat
+// let preuBase = 0;
+// let increment = 0;
+// let error = false;
+
+// // 1. Càlcul del preu base segons el recipient
+// if (tipus === "c") {
+//     preuBase = 3.45;
+// } else if (tipus === "t") {
+//     preuBase = 3.95;
+// } else {
+//     error = true;
+// }
+
+// // 2. Càlcul de l'increment segons el sabor
+// if (!error) {
+//     if (sabor === "Vainilla" || sabor === "Xocolata") {
+//         increment = 0;
+//     } else if (sabor === "Turró" || sabor === "Menta" || sabor === "Oreo") {
+//         increment = 0.5;
+//     } else if (sabor === "Crema" || sabor === "Gerds" || sabor === "Ametlles") {
+//         increment = 1;
+//     } else {
+//         error = true;
+//     }
+// }
+
+// // 3. Comprovació final i sortida per consola
+// if (error) {
+//     console.log("Error, dades mal introduïdes");
+// } else {
+//     let preuFinal = preuBase + increment;
+//     console.log(preuFinal);
+// }
+
+// 15.1.- Fent servir la instrucció switch escriu un programa que donat amb prompt un número de mes, entre 1 i 12, escrigui per pantalla el nom del mes que correspon.
+
+
+
+// let numero = Number(prompt("introdueix un mes de l'any (en numero"))
+
+// switch (numero){
+//     case 1:
+//         console.log("gener");
+//         break;
+//     case 2:
+//         console.log("Febrer");
+//         break;
+//     case 3:
+//         console.log("Març");
+//         break;
+//     case 4:
+//         console.log("Abril");
+//         break;
+//     case 5:
+//         console.log("Maig");
+//         break;
+//     case 6:
+//         console.log("Juny");
+//         break;
+//     case 7:
+//         console.log("Juliol");
+//         break;
+//     case 8:
+//         console.log("Agost");
+//         break;
+//     case 9:
+//         console.log("Setembre");
+//         break;
+//     case 10:
+//         console.log("Octubre");
+//         break;
+//     case 11:
+//         console.log("Novembre");
+//         break;
+//     case 12:
+//         console.log("Desembre");
+//     default:
+//         console.log("Error: Has d'introduir un número entre l'1 i el 12.")
+// }
+
+// 15.2.- Un usuari va a una gelateria i per calcular el cost del seu gelat té un ordinador on posa dues dades:
+// 1. Si vol un conus (c) o una terrina (t). El conus té un cost base de 3.45 i la terrina de 3.95
 // 2. Quin d’aquests sabors vol:
 // 1. Vainilla o Xocolata. No cal afegir res
 // 2. Turró, Menta o Oreo. Caldrà afegir 0.5 al preu final.
 // 3. Crema, Gerds o Ametlles. Caldrà afegir 1 al preu final.
 // Fes servir la instrucció switch per fer el càlcul de l’increment de preu associat al sabor.
-// Si l’usuari posa alguna dada malament, el missatge que es posarà a la consola serà “Error
-// dades mal introduïdes”.
+// Si l’usuari posa alguna dada malament, el missatge que es posarà a la consola serà “Error dades mal introduïdes”.
 // Si totes les dades són correctes, escriurà el preu final.
+
+// Condicional múltiple: switch
+// let preuBase = 0;
+// let recipient = prompt("tarrina o conus? (t/c)");
+// let sabor = prompt("quin sabor és");
+
+// if (recipient !== "c" && recipient !== "t") {
+//     console.log("Error, dades mal introduïdes");
+// } 
+// else {
+//     let extra = 0;
+//     let saborValid = true;
+
+//     switch (sabor){
+//         case "Vainilla":
+//         case "Xocolata":
+//             extra = 0;
+//         break;
+        
+//         case "Turró":
+//         case "Menta":
+//         case "Oreo":
+//             extra = 0.5;
+//         break;
+
+//         case "Crema":
+//         case "Gerds":
+//         case "Ametlles":
+//             extra = 1;
+//         break;
+
+//         default:
+//             saborValid = false;
+//     }
+//     if(saborValid){
+//         let preuFinal = preuBase + extra;
+//         console.log("el preu final és:" + preuFinal + "€");
+//     } else {
+//         console.log("Error, dades mal introduïdes")
+//     }
+// }
+
+
+
 // 15.3.- Escriu un programa, que donat una lletra que representa un dia de la setmana (l -
 // dilluns, m - dimarts, x - dimecres, j - dijous, …) escrigui a la consola si el dia és laborable o
 // festiu. Són laborables de dilluns a divendres. Fes servir la instrucció switch.
 // Bucles: for
+
+
+
+
 // 16.1.- Escriu, fent servir la instrucció for, un programa que escrigui a la consola 10 cops el
 // text “Estem fent bucles”.
 // 16.2.- Escriu, fent servir la instrucció for, un programa que escrigui a la consola tots els
