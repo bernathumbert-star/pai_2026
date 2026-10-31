@@ -402,20 +402,59 @@
 
 
 
-// 15.3.- Escriu un programa, que donat una lletra que representa un dia de la setmana (l -
-// dilluns, m - dimarts, x - dimecres, j - dijous, …) escrigui a la consola si el dia és laborable o
-// festiu. Són laborables de dilluns a divendres. Fes servir la instrucció switch.
-// Bucles: for
+// 15.3.- Escriu un programa, que donat una lletra que representa un dia de la setmana (l -dilluns, m - dimarts, x - dimecres, j - dijous, …) escrigui a la consola si el dia és laborable o festiu. Són laborables de dilluns a divendres. Fes servir la instrucció switch. Bucles: for
+
+// let lletra = prompt("introdueix lletra")
+
+// let dia = ["l", "m", "x", "j", "v", "s", "e"]
+
+// for (let i = 0; i < dia.length; i++){
+//     let dies = dia[i]
+
+
+//     switch (lletra){
+//         case "l":
+//         case "m":
+//         case "x":
+//         case "j":
+//         case "v":
+//             console.log("dia laborable")
+//             break;
+//         case "s":
+//         case "e":
+//             console.log("dia festiu")
+//             break;
+//         default:
+//             console.log("lletra no reconeguda (l,m,x,j,v,s,e)")
+
+//     }
+// }
 
 
 
 
-// 16.1.- Escriu, fent servir la instrucció for, un programa que escrigui a la consola 10 cops el
-// text “Estem fent bucles”.
-// 16.2.- Escriu, fent servir la instrucció for, un programa que escrigui a la consola tots els
-// nombres del 5 al 20.
-// 16.3.- Escriu un programa que, donat un nombre N, escrigui a la consola la suma de tots els
-// nombres entre 1 i N.
+
+// 16.1.- Escriu, fent servir la instrucció for, un programa que escrigui a la consola 10 cops el text “Estem fent bucles”.
+
+// for(i = 0; i < 10; i++){
+//     console.log('"Estem fent bucles".', + i)
+// }
+
+// 16.2.- Escriu, fent servir la instrucció for, un programa que escrigui a la consola tots els nombres del 5 al 20.
+
+// for(i = 5; i < 21; i++){
+//     console.log(i)
+// }
+
+// 16.3.- Escriu un programa que, donat un nombre N, escrigui a la consola la suma de tots els nombres entre 1 i N.
+// let N = Math.abs(Number(prompt("introdueix un numero")));
+// let suma = 0
+// for(i = 1; i != N; i++){
+//     suma += i 
+// }
+
+// console.log(suma)
+
 // 16.4.- Escriu un programa que, donat un nombre N, escrigui a la consola el factorial
 // d’aquest nombre. El factorial és la multiplicació de tots els números entre 1 i N.
 // 16.5.- Escriu un programa que, donat dos números N i M (on N sempre serà menor que M)
