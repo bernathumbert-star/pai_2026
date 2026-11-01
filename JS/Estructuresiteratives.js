@@ -455,17 +455,90 @@
 
 // console.log(suma)
 
-// 16.4.- Escriu un programa que, donat un nombre N, escrigui a la consola el factorial
-// d’aquest nombre. El factorial és la multiplicació de tots els números entre 1 i N.
-// 16.5.- Escriu un programa que, donat dos números N i M (on N sempre serà menor que M)
+// 16.4.- Escriu un programa que, donat un nombre N, escrigui a la consola el factorial d’aquest nombre.
+// El factorial és la multiplicació de tots els números entre 1 i N.
+// let N = Number(prompt("introdueix un nombre:"))
+// let factorial = 1
+// for(i = 1; i <= N; i++){
+//     factorial = factorial * i
+//     console.log(factorial)
+// }
+
+
+// 16.5.- Escriu un programa que, donat dos números N i M (on N sempre serà menor que M) 
 // calculi la suma de tots els números entre N i M (ambdós inclosos).
+// let N = Number(prompt("introdueix el numero petit:"))
+// let M = Number(prompt("introdueix el numero gran:"))
+// let count = 0
+
+// if(N < M){
+//     for(let i = N; i <=M; i++){
+//         count = count + i
+//         console.log(count)
+//     }
+// } else{
+//     console.log("error, el primer nombre ha de ser més petit")
+// }
+
+
+
 // 16.6.- Escriu un programa que, donat un número N, calculi la suma de tots els números
 // parells entre 2 i N.
+
+// let N = Number(prompt("introduir numero"))
+// let cons = 0
+
+// if(2 <= N){
+//     for(let i = 2; i <= N; i += 2){
+//         cons = cons + i
+//         console.log(cons)
+//     }
+// } else{
+//     console.log("has d'escriure un nombre major a 2")
+// }
+
+
 // 16.7.- Escriu un programa que, donat un número N, escrigui a la consola la taula de
 // multiplicar de N.
+
+// let N = Number(prompt("introdueix un nombre del que vols saber la seva taula de multiplicar"))
+
+// for(let i = 0; i <= 10;i++){
+//     console.log(i*N)
+// }
+
+
+
 // 16.8.- Escriu un programa que, donat un número N, escrigui a la consola tots els números
 // de N a 1 (per tant, en ordre descendent). Observa el que passa si N < 1
+
+// let N = Number(prompt("introdueix un numero"))
+
+// if(N > 0){
+//     for(let i = N; i >= 0 ; i--){
+//         console.log(i)
+// }}
+// else if(N < 0){
+//     for(let i = N; i <= 0; i++)
+//         console.log(i)
+// }
+
+
 // 16.9.- Escriu un programa que donat un número N, escrigui N asteriscos (*)
+
+// let N = Number(prompt("escriu un nombre"))
+
+// console.log("*".repeat(N))
+
+
+// let N = Number(prompt("escriu un nombre"))
+
+// for(let i = 0; i < N; i++){
+//     console.log("*")
+// }
+
+
+
 // 16.10.- Escriu un programa que donat un número N, escrigui el següent dibuix (cas que el
 // número introduït sigui 5).
 // *
@@ -473,20 +546,79 @@
 // ***
 // ****
 // *****
-// 16.11.- Escriu un programa que donat dos números N i M, crei i sumi una sèrie com la
-// següent:
-// Si N ← 2 i M ← 5
-// Sortida per consola:
-// 2 22 222 2222 22222
-// La suma de la sèrie és:24690
-// Bucles: while
+
+// let N = Number(prompt("introduir nombre"));
+// let variable = "";
+
+// for(i = 0; i <= N; i++){
+//     variable += "*".repeat(i) + "\n"
+// }
+// console.log(variable)
+
+    // 16.11.- Escriu un programa que donat dos números N i M, crei i sumi una sèrie com la
+    // següent:
+    // Si N ← 2 i M ← 5
+    // Sortida per consola:
+    // 2 22 222 2222 22222
+    // La suma de la sèrie és:24690
+    // Bucles: while
+
+// let N = Number(prompt("introdueix el primer nombre"));
+// let M = Number(prompt("introdueix el segon nombre"));
+// let actual = "";
+// let serieText = " ";
+// let suma = 0;
+// let comptador = 0;
+
+// while(comptador < M){
+//     actual += N;
+//     serieText += actual + " ";
+//     suma += Number(actual)
+//     comptador++
+// }
+// console.log(serieText.trim());
+// console.log("La suma de la sèrie és:" + suma);
+
+
+
 // 17.1.- Escriu, fent servir la instrucció while, un programa que escrigui a la consola 10 cops el
 // text “Estem fent bucles”.
+
+// let contador = 0
+// while(contador < 10){
+//     console.log("Estem fent bucles")
+//     contador++
+// }
+
 // 17.2.- Escriu, fent servir la instrucció while, un programa que escrigui a la consola tots els
 // nombres del 5 al 20.
+
+// let contador = 5;
+
+// while(contador <= 20){
+//     console.log(contador)
+//     contador++
+// }
+
 // 17.3.- Escriu un programa, fent servir la instrucció while, que, donat un número N, escrigui a
 // la consola tots els números de N a 1 (per tant, en ordre descendent). Observa el que passa
 // si N < 1
+
+// let N = Number(prompt("introduir nombre"));
+// let contador = 0;
+
+// if(N > 1){
+// while(N > 0){
+//     console.log(N)
+//     N--
+// }}
+// else{
+//     while(N <= -1){
+//         console.log(N)
+//         N++
+// }}
+
+
 // 17.4.- Escriu un programa que escrigui la seqüència de Fibonnacci des d’u fins a un número
 // N donat.
 // La seqüencià de Fibonnacci consisteix en la suma dels dos valors anteriors tenint en
@@ -499,6 +631,10 @@
 // El cinquè és 2 + 3 → 5
 // El sisè és 3 + 5 → 8
 // El setè és 5 + 8 → 13
+
+
+
+
 // 17.5.- Escriu un programa que, donats dos números N i M, escrigui en la consola la llista de
 // multiplicacions N*1, N*2, N*3, N*4,...,N*M Per evitar problemes per la mida del resultat (en
 // cas que N o M siguin molt grans) l’escriptura de multiplicacions s’ha d’aturar si el resultat és
