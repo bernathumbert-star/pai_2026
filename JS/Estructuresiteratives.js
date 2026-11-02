@@ -645,10 +645,27 @@
 // 200000, 400000, 600000, 800000, 1000000
 // I ja no s’escriuria res més doncs 1000000 és més gran que 999999
 // Bucles: do-while
-// 18.1.- Escriu, fent servir la instrucció do-while, un programa que escrigui a la consola 10
-// cops el text “Estem fent bucles”.
+// 18.1.- Escriu, fent servir la instrucció do-while, un programa que escrigui a la consola 10 cops el text “Estem fent bucles”.
+
+// let count = 1
+// do{
+//     console.log("Estem fent bucles")
+//     count++
+// }while(count <= 10)
+
+
+
 // 18.2.- Escriu, fent servir la instrucció for, un programa que escrigui a la consola tots els
 // nombres del 5 al 20.
+// let count = 5
+
+// do{
+//     console.log(count)
+//     count++
+// }while(count <= 20)
+
+
+
 // 18.3.- Escriure un programa, fent servir la instrucció do-while, que, donat un número N,
 // escrigui a la consola tots els números de N a 1 (per tant, en ordre descendent). Observa el
 // que passa si N < 1.
